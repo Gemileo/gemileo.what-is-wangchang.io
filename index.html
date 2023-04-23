@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王畅是什么？</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: inherit;
+      border: none;
+      outline: none;
+      color: white;
+      background-color: inherit;
+      margin: 0;
+      padding: 14px;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .content {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  </style>
+  <script>
+    function showContent(contentId) {
+      const contentElements = document.querySelectorAll('.content');
+      contentElements.forEach(element => {
+        element.style.display = 'none';
+      });
+      document.getElementById(contentId).style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="javascript:void(0);" onclick="showContent('intro')">个体简介</a>
+    <div class="dropdown">
+      <button class="dropbtn">生活习性
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="javascript:void(0);" onclick="showContent('daily_behavior')">日常行为</a>
+        <a href="javascript:void(0);" onclick="showContent('living_environment')">生活环境</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">爱好
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="javascript:void(0);" onclick="showContent('food')">食物</a>
+    <a href="javascript:void(0);" onclick="showContent('toys')">玩具</a>
+  </div>
+</div>
+</div>
+  <div id="intro" class="content" style="display:block;">
+    <h1>个体简介</h1>
+    <p>王畅是一只可爱的小猪，它的年龄是19岁，生日是8月20日。它有一双明亮的眼睛和一个粉嫩的鼻子，总是给人带来快乐和温暖。</p>
+	<img src="pig.jpg" alt="王畅的照片" width="300" height="200">
+  </div>
+  <div id="daily_behavior" class="content">
+    <h1>日常行为</h1>
+    <p>王畅的日常行为包括：</p>
+    <ul>
+      <li>吃</li>
+      <li>睡</li>
+      <li>吃</li>
+    </ul>
+  </div>
+  <div id="living_environment" class="content">
+    <h1>生活环境</h1>
+    <p>王畅生活在一个充满爱的家庭中，它的小被窝非常温暖舒适。家里还有各种各样的玩具，让它度过愉快的时光。</p>
+  </div>
+  <div id="food" class="content">
+    <h1>食物</h1>
+    <p>王畅最喜欢的食物有：</p>
+    <ul>
+      <li>小屁饺</li>
+      <li>小屁包</li>
+      <li>小屁团</li>
+      <li>小屁噗</li>
+    </ul>
+  </div>
+  <div id="toys" class="content">
+    <h1>玩具</h1>
+    <p>王畅喜欢的玩具有：</p>
+    <ul>
+      <li>屁屁小圆球儿</li>
+      <li>彩色小跳跳球</li>
+      <li>毛绒小熊</li>
+      <li>可爱的小鸭子</li>
+    </ul>
+  </div>
+</body>
+</html>
+```
+
